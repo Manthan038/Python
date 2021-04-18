@@ -1,7 +1,7 @@
 import turtle
 import random
 import time
-
+#Buuble sort
 x=[random.randrange(0,100) for x in range(10)]
 ts=[]
 cnt=20
