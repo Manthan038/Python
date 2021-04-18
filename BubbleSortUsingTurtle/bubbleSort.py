@@ -16,9 +16,11 @@ for j in range(len(x)):
 pos=turtle.Turtle()
 pos.hideturtle()
 def current_pos(start,st):
+  if(len(x)-1==st):
+    return 
   if st==0:
-    pos.speed(0)
     pos.reset()
+    pos.speed(0)
     pos.hideturtle()
     pos.penup()
     pos.fd(15)
@@ -28,6 +30,7 @@ def current_pos(start,st):
     pos.speed(0)
     pos.clear()
     pos.hideturtle()
+    pos.penup()
     pos.fd(start)
     pos.rt(90)
   pos.pendown()
@@ -37,6 +40,14 @@ def current_pos(start,st):
   pos.fd(20)
   pos.lt(90)
   pos.fd(20)
+  pos.lt(90)
+  pos.fd(20)
+  pos.lt(90)
+  pos.fd(40)
+  pos.lt(90)
+  pos.fd(20)
+  pos.lt(90)
+  pos.fd(40)
   pos.lt(90)
   pos.fd(20)
   pos.lt(90)
